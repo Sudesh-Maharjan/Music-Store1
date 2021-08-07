@@ -1,0 +1,531 @@
+*{
+    margin: 0px;
+   
+}
+
+.document{
+    background-image:url(pic/background.webp);
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+   padding-top: 0px;
+   color: whitesmoke;
+   padding-left: 26px;
+   position: absolute;
+   letter-spacing: 3px;
+   font-family: cursive;
+}
+.nav-bar{
+    background-color: black;
+    height: 57px;
+    box-shadow: 18px 11px 15px -4px #00000070;
+}
+
+.b{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0px 10px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding-top: 14px;
+    text-align: center;
+    height: 43px;
+    
+}
+.b:hover{
+    color: black;
+    background-color: whitesmoke;
+    transition: 0.1s linear;
+    transform: scale(1.1);
+
+}
+/* cart */
+.c{
+    padding-left: 32px;
+    width: 70px;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    margin-left: 59%;
+    border-radius: 6px;  
+    height: 25px;
+}
+.c:hover{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(3, 250, 250);
+    transition: 0.1s linear;
+    transform: scale(1.1);
+    border-color: whitesmoke;
+}
+.fas{
+    margin-right: 8px;
+}
+
+/*search bar*/
+.search{
+    text-align: right;
+    padding-right: 36px;
+    padding-top: 13px;
+    margin-right: 60px;
+}
+.btn-search{
+    background-color: black;
+    color: whitesmoke;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    height:36px;
+    margin-left: 16px;
+}
+
+.btn-search:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.2s linear;
+    transform: scale(1.1);
+    box-shadow: 18px 11px 15px -4px #00000070;
+}
+.sbar{
+    border-radius: 13px;
+    width: 20%;
+    height: 27px;
+    box-shadow: 18px 11px 15px 10px #00000070;
+}
+.sbar:hover{
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+
+/* Instruments css from here */
+
+.Instruments{
+    padding-top: 61px;
+}
+
+h3{
+    position: absolute;
+}
+/* tabla css */
+.t1{
+    height: 174px;
+    padding-left: 42px;
+}
+.t1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.tabla-img{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 15px;
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    left: 27%;
+}
+.container{
+    width: 98%;
+    height: 55vh;
+    margin-bottom: 3%;
+}
+/* product price and details */
+p{
+    color: black;
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.detail-box{
+    text-align: center;
+}
+.detail-box a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(228, 225, 225);
+    font-family: calibri;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    
+}
+.detail-box a:hover{
+    color: rgb(82, 196, 204);
+   background-color: black;
+   transition: ease-out;
+    
+}
+
+.t2{
+    height: 174px;
+    width:170px;
+    padding-left:84px ;
+}
+.t2:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arabic-tabla-img{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 15px;
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    left: 3%;
+}
+.t3{
+    height: 174px;
+    width: 321px;
+    padding-left:14px ;
+}
+.t3:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.electric1-tabla-img{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 15px;
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    justify-content: start;
+    left: 51%;
+}
+.t4{
+    height: 174px;
+    width: 250px;
+    padding-left:48px ;
+}
+.t4:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.electric2-tabla-img{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 15px;
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    justify-content: start;
+    left: 75%;
+}
+h2{
+    text-align: center;
+    color: black;
+    margin-top: -51px;
+    padding-bottom: 13px;
+}
+
+/* --------------------Guitar------------------>
+--------------------Guitar------------------> */
+
+.g1{
+    height: 174px;
+    padding-left:77px ;
+}
+.g1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.g2{
+    height: 174px;
+    width: 172px;
+    padding-left:78px ;
+}
+.g2:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.g3{
+    height: 174px;
+    width: 73px;
+    padding-left:134px ;
+}
+.g3:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.g4{
+    height: 174px;
+    padding-left:29px ;
+}
+.g4:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+/* <!--------------------Keyboard------------------>
+<!--------------------Keyboard------------------> */
+
+.k1{
+    height: 174px;
+    padding-left:34px ;
+}
+.k1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.k2{
+    height: 174px;
+    width: 356px;
+    padding-left:10px;
+}
+.k2:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.k3{
+    height: 174px;
+    width: 356px;
+}
+.k3:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.k4{
+    height: 174px;
+    width: 314px;
+    padding-left:18px ;
+}
+.k4:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* social icons */
+
+.icons{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 94%;
+    margin-top: -10%;
+}
+/* .icon{
+    display: inline-block;
+} */
+.icon-btn{
+    display: inline-block;
+    width: 74%;
+    height: 65px;
+    background: #d1cece;
+    margin: 5px;
+    border-radius: 18px;
+    box-shadow: 18px 13px 9px -4px #00000070;
+    color: #a70e0e;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon-btn :hover{
+    background: black;
+}
+.icon-btn i{
+    line-height: 65px;
+    font-size: 27px;
+    transition: 0.2s linear;
+}
+.icon-btn :hover i{
+    transform: scale(1.4);
+    color: #07daff;
+}
+
+
+/* login and signup buttons */
+
+
+.main-btns{
+    margin-top: 13%;
+    margin-left: 37%;
+
+}
+.btn-a{
+    float: left;
+    margin-left: 19px;
+    list-style-type: none;
+}
+.logsign_btn{
+    text-align: center;
+    color: whitesmoke;
+    background-color: transparent;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    height: 41px;
+    width: 145px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.logsign_btn:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: 0.2s linear;
+    transform: scale(1.1);
+    box-shadow: 18px 11px 15px -4px #00000070;
+}
+
+/* signup form */
+.signup-body{
+    background-color: whitesmoke;
+}
+.h2{
+    background-color: rgba(245, 245, 245, 0.767);
+    font-family: cursive;
+}
+.signup-page{
+    text-align: center;
+    margin-top: 8%;
+    background-color: rgb(36, 30, 30);
+    position: relative;
+    margin-left: 29%;
+    max-width: 42%;
+    border-radius: 16px;
+    box-shadow: 18px 11px 15px -4px #00000070;;
+}
+.input, .input-a{
+    height: 41px;
+    width: 59%;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    
+}
+select:hover{
+    cursor: pointer;
+}
+.input-a{
+    cursor: pointer;
+    width: 30%;
+    
+}
+/* signup button */
+.input-a:hover{
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+.input:hover{
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+
+/* signup icon */
+.signup-icon{
+    display: inline-block;
+    background-color: whitesmoke;
+    height: 33px;
+    width: 6%;
+    border-radius: 4px;
+    padding-top: 13px;
+}
+
+/* radio buttons */
+.gender{
+    color: black;
+    background-color: white;
+    height: 43px;
+    width: 384px;
+    margin-left: 148px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -7%;
+    font-family: cursive;
+}
+.gender:hover{
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+.radio{
+    margin-right: 15%;
+    margin-top: 14px;
+    width: 25px;
+    cursor: pointer;
+}
+.signup-radio{
+    /* display: inline-block; */
+    background-color: whitesmoke;
+    height: 33px;
+    width: 6%;
+    border-radius: 4px;
+    padding-top: 13px;
+    margin-left: 107px;
+}
+
+.signup-login{
+        text-align: center;
+        margin-top: 18%;
+        background-color: rgb(36, 30, 30);
+        position: relative;
+        margin-left: 29%;
+        max-width: 42%;
+        border-radius: 16px;
+        box-shadow: 18px 11px 15px -4px #1f1a1a70;
+}
+
+
+/* login button */
+ 
+.login-page{
+    background-color: whitesmoke;
+}
+.register-login{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    width: 29%;
+    height: 10%;
+    font-family: cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    box-shadow: 18px 11px 15px -4px #00000026;
+    border-color: black;
+    border-radius: 5px;
+
+}
+.register-login:hover{
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+
