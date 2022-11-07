@@ -9,19 +9,91 @@
 
     <!-- nav baar -->
 <nav class="nav-bar">
-    <a class="b" href="website.html">Home</a>
-    <a class="b" href="instruments.html"> Instruments</a>
-    <a class="b" href="">Daily deals</a>
-    <a class="c" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
- 
+    <a class="nav-btns" href="website.php">Home</a>
+    <a class="nav-btns" href="instruments.php"> Instruments</a>
+    <a class="nav-btns" href="">About us</a>
+    <div class="cart">
+    <a class="c" href="cart.php"><i class="fas fa-shopping-cart"></i></a>
+</div>
  </nav>
+ 
  <div class="search">
  <input type="text" name="search" class="sbar">
  <button class="btn-search">Search</button>
  </div>
-    
+ <?php
+ //initialize error variables to null
+ $FnameErr = $LnameErr = $genderErr = $EmailErr = $numberErr = $countryErr = $stateErr = $passwordErr = "";
+ //initialize to null first
+ $Fname = $Lname = $gender = $Email = $number = $country = $state = $password = "";
+ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+ //To check if the user input field is empty and display error if it is true.
+if(empty($_POST["Fname"])){
+    $FnameErr = "First name required";
+  }else{
+    $Fname = test_input($_POST["Fname"]);
+  }
+  
+  if(empty($_POST["Lname"])){
+    $LnameErr = "Last name required";
+  }else{
+    $Lname = test_input($_POST["Lname"]);
+  }
+  
+  
+  if(empty($_POST["gender"])){
+    $genderErr = "gendersa required";
+  }else{
+    $gender = test_input($_POST["gender"]);
+  }
+  
+  
+  if(empty($_POST["Email"])){
+    $EmailErr = "Email required";
+  }else{
+    $Email = test_input($_POST["Email"]);
+  }
+  
+  
+  if(empty($_POST["number"])){
+    $numberErr = "Number required";
+  }else{
+    $number = test_input($_POST["number"]);
+  }
+  
+  
+  if(empty($_POST["country"])){
+    $countryErr = "Country required";
+  }else{
+    $country = test_input($_POST["country"]);
+  }
+  
+  
+  
+  if(empty($_POST["state"])){
+    $stateErr = "State required";
+  }else{
+    $state = test_input($_POST["state"]);
+  }
+  
+  
+  if(empty($_POST["password"])){
+    $passwordErr = "Password required";
+  }else{
+    $password = test_input($_POST["password"]);
+  }
+}
+  function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+ ?>
+
+
  <!-- sign up -->
-<form action="registration.php" method = "post">
+<form action="registration.php" method = "POST">
     <div class="signup-page">
         <h2 class="h2">Signup</h2>
         <div class="input-boxes">
@@ -30,7 +102,7 @@
         </div>
             <div class="L-name"><div class="signup-icon"><i class="fas fa-user"></i></div><input class="input" type="text" placeholder="Last name" name = "Lname"></div>
            <div class="signup-radio"><i class="fas fa-venus-mars"></i></div> <div class="gender"> Male<input class="radio" value="male" name="gender" type="radio">Female<input class="radio" value="female" name="gender" type="radio"></div>
-            <div class="email"><div class="signup-icon"><i class="fas fa-envelope"></i></div><input class="input" type="email" name = "Email"></div>
+            <div class="email"><div class="signup-icon"><i class="fas fa-envelope"></i></div><input class="input" type="email" name = "email"></div>
             <div class="number"><div class="signup-icon"><i class="fas fa-mobile-alt"></i></div><input class="input" type="text" placeholder="Mobile number" name = "number"></div>
             <div class="country"><div class="signup-icon"><i class="fas fa-globe-asia"></i></div>
             <!-- country selector -->

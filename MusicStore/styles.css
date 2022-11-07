@@ -1,78 +1,85 @@
 *{
     margin: 0px;
+    /* font-size: 16px; */
    
 }
+/* .nav-bar{
+    border: 4px solid white;
+} */
 
 .document{
     background-image:url(pic/background.webp);
-    width: 100%;
-    height: 100%;
+    background-size: cover;
 }
 
 h1{
-   padding-top: 0px;
+font-size: 1.6em;
    color: whitesmoke;
-   padding-left: 26px;
-   position: absolute;
-   letter-spacing: 3px;
-   font-family: cursive;
+   padding-left: 3em;
+   letter-spacing: 0.2em;
+   font-family:Arial, Helvetica, sans-serif;
 }
 .nav-bar{
+    margin-top: -1em;
     background-color: black;
-    height: 57px;
-    box-shadow: 18px 11px 15px -4px #00000070;
+    height: 3.7em;
+    box-shadow: 2px 2px 2px 2px #00000070;
 }
 
-.b{
+.nav-btns{
+    border-radius: 0.3em;
     font-family: cursive;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1.4em;
     text-decoration: none;
     color: whitesmoke;
-    margin: 0px 10px;
-    letter-spacing: 2px;
+    margin: 0em 0.6em;
+    letter-spacing: 0.2em;
     display: inline-block;
     padding-top: 14px;
-    text-align: center;
-    height: 43px;
+    height: 2em;
     
 }
-.b:hover{
-    color: black;
-    background-color: whitesmoke;
-    transition: 0.1s linear;
-    transform: scale(1.1);
+.nav-btns:hover{
+    color: rgb(157, 121, 14);
+    transition: 0.6s linear;
+    transform: scale(1);
 
 }
 /* cart */
 .c{
-    padding-left: 32px;
-    width: 70px;
-    text-align: center;
-    color: black;
-    background-color: whitesmoke;
-    margin-left: 59%;
-    border-radius: 6px;  
-    height: 25px;
+    display: flex;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+color: black;
+background-color: whitesmoke;
+border-radius: 0.4em;
+align-items: center;
+
 }
 .c:hover{
+   
     cursor: pointer;
     background-color: black;
     color: rgb(3, 250, 250);
-    transition: 0.1s linear;
+    transition: 0.2s linear;
     transform: scale(1.1);
     border-color: whitesmoke;
 }
-.fas{
-    margin-right: 8px;
+.cart{
+    margin-top: -3.4em;
+    margin-right: 2em;
+    display: flex;
+    justify-content: right;
 }
-
+.add-too-cart{
+    margin-top: -3.4em;
+}
 /*search bar*/
 .search{
     text-align: right;
-    padding-right: 36px;
-    padding-top: 13px;
-    margin-right: 60px;
+    margin-top: 1em;
+    margin-right: 7em;
 }
 .btn-search{
     background-color: black;
@@ -80,8 +87,8 @@ h1{
     font-family: cursive;
     letter-spacing: 1px;
     border-radius: 5px;
-    height:36px;
-    margin-left: 16px;
+    height:2.3em;
+    margin-left: 1em;
 }
 
 .btn-search:hover{
@@ -90,16 +97,16 @@ h1{
     color: black;
     transition: 0.2s linear;
     transform: scale(1.1);
-    box-shadow: 18px 11px 15px -4px #00000070;
+    box-shadow: 3px 3px 3px 2px #00000070;
 }
 .sbar{
-    border-radius: 13px;
-    width: 20%;
-    height: 27px;
-    box-shadow: 18px 11px 15px 10px #00000070;
+    border-radius: 0.3em;
+    width: 17em;
+    height: 1.8em;
+    box-shadow: 3px 3px 3px 3px #00000070;
 }
 .sbar:hover{
-    transition: 0.2s linear;
+    transition: 0.1s linear;
     transform: scale(1.1);
 }
 
@@ -114,28 +121,37 @@ h3{
 }
 /* tabla css */
 .t1{
+    padding-left: 17px;
+width: 259px;
     height: 174px;
-    padding-left: 42px;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
 }
 .t1:hover{
     opacity: 0.7;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1);
 }
+.contains{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+right: -2%;
+margin-bottom: 20%;
 
+}
 .tabla-img{
     background-color: whitesmoke;
+    height: 96%;
+    width: 96%;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding-top: 15px;
-    position: absolute;
-    overflow: hidden;
-    width: 350px;
-    left: 27%;
+    /* overflow: hidden; */
 }
 .container{
-    width: 98%;
-    height: 55vh;
+    width: 100%;
     margin-bottom: 3%;
 }
 /* product price and details */
@@ -148,6 +164,9 @@ p{
 }
 .detail-box{
     text-align: center;
+height: 33%;
+margin-top: 173%;
+margin-left: -334%;
 }
 .detail-box a{
     font-size: 20px;
@@ -158,13 +177,36 @@ p{
     color: black;
     letter-spacing: 2px;
     border-radius: 10px;
+   
     
 }
 .detail-box a:hover{
     color: rgb(82, 196, 204);
    background-color: black;
-   transition: ease-out;
+ 
     
+}
+.add-too-cart{
+    margin-top: 9px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(228, 225, 225);
+    font-family: calibri;
+    color: black;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+.add-too-cart:hover{
+    cursor: pointer;
+    color: rgb(82, 196, 204);
+    background-color: black;
+}
+a{
+    transition: 0.3s;
+}
+a:hover{
+    transform: scale(1.1);
 }
 
 .t2{
@@ -177,6 +219,7 @@ p{
     cursor: pointer;
     transform: scale(1.1);
 }
+
 
 .arabic-tabla-img{
     background-color: whitesmoke;
@@ -239,110 +282,20 @@ h2{
     padding-bottom: 13px;
 }
 
-/* --------------------Guitar------------------>
---------------------Guitar------------------> */
-
-.g1{
-    height: 174px;
-    padding-left:77px ;
-}
-.g1:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.g2{
-    height: 174px;
-    width: 172px;
-    padding-left:78px ;
-}
-.g2:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.g3{
-    height: 174px;
-    width: 73px;
-    padding-left:134px ;
-}
-.g3:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.g4{
-    height: 174px;
-    padding-left:29px ;
-}
-.g4:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-
-
-/* <!--------------------Keyboard------------------>
-<!--------------------Keyboard------------------> */
-
-.k1{
-    height: 174px;
-    padding-left:34px ;
-}
-.k1:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.k2{
-    height: 174px;
-    width: 356px;
-    padding-left:10px;
-}
-.k2:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.k3{
-    height: 174px;
-    width: 356px;
-}
-.k3:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.k4{
-    height: 174px;
-    width: 314px;
-    padding-left:18px ;
-}
-.k4:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(1.1);
-}
 
 /* social icons */
-
-.icons{
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    margin-left: 94%;
-    margin-top: -10%;
+.icons-container{
+    display: flex;
+    justify-content: right;
 }
-/* .icon{
-    display: inline-block;
-} */
+.icons{
+    display: flex;
+    flex-direction: column;
+width: 6em;
+text-align: center;
+list-style-type: none;
+margin-left: 93%;
+}
 .icon-btn{
     display: inline-block;
     width: 74%;
@@ -352,35 +305,28 @@ h2{
     border-radius: 18px;
     box-shadow: 18px 13px 9px -4px #00000070;
     color: #a70e0e;
-    overflow: hidden;
-    position: relative;
 }
 
-.icon-btn :hover{
+.icon-btn:hover{
     background: black;
+    color: #07daff;
+     transform: scale(1.1);
 }
 .icon-btn i{
     line-height: 65px;
-    font-size: 27px;
+    font-size: 1.7em;
     transition: 0.2s linear;
 }
-.icon-btn :hover i{
-    transform: scale(1.4);
-    color: #07daff;
-}
-
 
 /* login and signup buttons */
-
-
 .main-btns{
-    margin-top: 13%;
-    margin-left: 37%;
+    margin-top: 15em;
+    margin-left: 33em;
 
 }
 .btn-a{
     float: left;
-    margin-left: 19px;
+    margin-left: 2em;
     list-style-type: none;
 }
 .logsign_btn{
@@ -401,9 +347,9 @@ h2{
 .logsign_btn:hover{
     background-color: black;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
     transform: scale(1.1);
-    box-shadow: 18px 11px 15px -4px #00000070;
+    box-shadow: 3px 3px 3px 2px #00000070;
 }
 
 /* signup form */
@@ -441,12 +387,12 @@ select:hover{
 }
 /* signup button */
 .input-a:hover{
-    transition: 0.2s linear;
+    transition: 0.1s linear;
     transform: scale(1.1);
 }
 .input:hover{
     transition: 0.2s linear;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 /* signup icon */
@@ -496,11 +442,10 @@ select:hover{
         text-align: center;
         margin-top: 18%;
         background-color: rgb(36, 30, 30);
-        position: relative;
         margin-left: 29%;
         max-width: 42%;
         border-radius: 16px;
-        box-shadow: 18px 11px 15px -4px #1f1a1a70;
+        box-shadow: 3px 3px 3px 2px #1f1a1a70;
 }
 
 
@@ -519,13 +464,129 @@ select:hover{
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 18px;
-    box-shadow: 18px 11px 15px -4px #00000026;
+    box-shadow: 3px 3px 3px 2px #00000026;
     border-color: black;
     border-radius: 5px;
 
 }
 .register-login:hover{
-    transition: 0.2s linear;
+    transition: 0.1s linear;
     transform: scale(1.1);
 }
 
+/* sidebar */
+.side-btn{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+.fa-solid{
+    font-family:"Font Awesome 5 Free";
+}
+.side-bar{
+    background-color: white;
+    position: absolute;
+    width: 26%;
+    right: 74%;
+    top: 0%;
+height: 100%;
+border-radius: 10px;
+box-shadow: 10px 10px 8px rgb(169, 158, 158);
+/* transform: translate(-106%); */
+transition: 0.6s;
+display: none;
+
+}
+.topics{
+    display: inline;
+}
+
+.show-side-bar{
+    display: block;
+}
+
+
+/* menu css */
+/* body{
+    background-color: rgb(198, 149, 149);
+  } */
+  /* h1{
+    font-family: cursive;
+    color: black;
+    text-align: center;
+  } */
+  /* .img{
+    width: 51%;
+     height: 28%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  } */
+  /* .img:hover{
+    box-shadow:3px 3px 1px rgb(220, 217, 217) ;
+  } */
+  /* .name{ */
+    /* position: absolute;
+    top: 42%;
+    right:83.5%; */
+    /* font-family: var(--ff-secondary);
+    font-size: 20px;
+    background-color: antiquewhite;
+    width: 22%;
+    text-decoration: underline;
+    background-color: rgb(33, 32, 30);
+    color: white;
+    border-radius: 5px;
+  } */
+  /* .price,.dollar{
+    font-family: var(--ff-secondary);
+    background-color: antiquewhite;
+    width: 22%;
+    background-color: rgb(63, 61, 56);
+    color: white;
+    border-radius: 5px;
+  }
+  .paragraph{
+    height: 18%;
+    font-family: var(--ff-secondary);
+    background-color: rgb(118, 113, 103);
+    color: white;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 15px;
+  } */
+  /* .menu{
+    background-color:rgb(197, 178, 140);
+    width: 1000px;
+  position: absolute;
+  right: 19%;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  box-shadow: 10px 10px 5px rgb(90, 87, 87);
+  }
+  .main-section{
+    height: 141%;
+  } */
+  
+  .btn{
+    background-color: rgb(236, 226, 226);
+    color: rgb(198, 149, 149);
+    border-radius: 5px;
+    width: 66px;
+    height: 29px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 2px 5px;
+    transition: 0.5s;
+  }
+  .btn:hover{
+    background-color: rgb(198, 149, 149);
+    color: whitesmoke;
+  }
+  .menu-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
